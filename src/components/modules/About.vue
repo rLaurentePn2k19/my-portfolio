@@ -30,19 +30,19 @@ export default {
     return {
       items: [
         {
-          color: "red lighten-2",
+          color: "#C62828",
           title: "Me",
           icon: "mdi-account",
           src: require("@/assets/me1.jpg")
         },
         {
-          color: "dark orange",
+          color: "#FB8C00",
           title: "Organization",
           icon: " mdi-account-multiple",
           src: require("@/assets/pn-logo.png")
         },
         {
-          color: "green lighten-1",
+          color: "#43A047",
           title: "Education",
           icon: "mdi-school",
           src: require("@/assets/usc.jpg")

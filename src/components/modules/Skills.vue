@@ -11,7 +11,6 @@
           <v-col v-for="skill in skills" :key="skill.title" cols="6" sm="2">
             <v-chip large class="ma-2" :color="skill.color" outlined>
               <iconify-icon :data-icon="skill.icon" data-width="30px"></iconify-icon>
-              <!-- <v-icon left>{{skill.icon}}</v-icon> -->
               {{skill.title}}
             </v-chip>
           </v-col>
@@ -85,32 +84,6 @@ export default {
           icon: "mdi:nodejs",
           title: "ExpressJs",
           color: "#3C873A"
-        }
-      ],
-      items: [
-        {
-          src: require("@/assets/logo.png")
-        },
-        {
-          src: require("@/assets/java.png")
-        },
-        {
-          src: require("@/assets/python.png")
-        },
-        {
-          src: require("@/assets/angular.png")
-        },
-        {
-          src: require("@/assets/bootstrap.png")
-        },
-        {
-          src: require("@/assets/js1.png")
-        },
-        {
-          src: require("@/assets/css.png")
-        },
-        {
-          src: require("@/assets/html.png")
         }
       ]
     };
