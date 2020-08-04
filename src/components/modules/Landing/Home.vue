@@ -2,10 +2,8 @@
   <div>
     <Parallax/>
     <br>
-    <!-- <v-divider></v-divider> -->
     <About/>
     <br>
-    <!-- <v-divider></v-divider> -->
     <Skills/>
     <br>
     <Projects/>

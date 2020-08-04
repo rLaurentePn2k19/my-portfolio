@@ -10,7 +10,7 @@
         <v-row class="mb-6">
           <v-col v-for="skill in skills" :key="skill.title" cols="6" sm="2">
             <v-chip large class="ma-2" :color="skill.color" outlined>
-              <span left class="iconify" :data-icon="skill.icon" data-inline="false" data-width="30px"></span>
+              <iconify-icon :data-icon="skill.icon" data-width="30px"></iconify-icon>
               <!-- <v-icon left>{{skill.icon}}</v-icon> -->
               {{skill.title}}
             </v-chip>
@@ -27,12 +27,12 @@ export default {
     return {
       skills: [
         {
-          icon: "logos:vue",
+          icon: "mdi:language-html5",
           title: "HTML",
           color: "#E44D26"
         },
         {
-          icon: "whh:cssthree",
+          icon: "ion:logo-css3",
           title: "CSS",
           color: "#264de4"
         },
@@ -42,17 +42,17 @@ export default {
           color: "#F0DB4F"
         },
         {
-          icon: "mdi-fan",
+          icon: "logos:vue",
           title: "VueJs",
           color: "#41B883"
         },
         {
-          icon: "mdi-fan",
+          icon: "mdi:angular",
           title: "Angular",
           color: "#B52E31"
         },
         {
-          icon: "mdi-fan",
+          icon: "mdi:bootstrap",
           title: "Bootstrap",
           color: "#080135"
         },
@@ -62,27 +62,27 @@ export default {
           color: "indigo"
         },
         {
-          icon: "mdi-fan",
+          icon: "mdi:language-java",
           title: "Java",
           color: "#f89820"
         },
         {
-          icon: "mdi-fan",
+          icon: "mdi:language-python",
           title: "Python",
           color: "#4B8BBE"
         },
         {
-          icon: "mdi-fan",
+          icon: "logos:nodejs",
           title: "NodeJs",
           color: "#68A063"
         },
         {
-          icon: "mdi-fan",
+          icon: "cib:mongodb",
           title: "MongoDb",
           color: "#4DB33D"
         },
         {
-          icon: "mdi-fan",
+          icon: "mdi:nodejs",
           title: "ExpressJs",
           color: "#3C873A"
         }
