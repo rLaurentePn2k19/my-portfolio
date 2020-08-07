@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div style="padding-bottom: 35px;">
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
         <h1 class="display-2 font-weight-thin mb-4">{{'Contact'}}</h1>
@@ -32,16 +32,12 @@ export default {
           title: "Rangie Laurente"
         },
         {
-          icon: "mdi-facebook",
-          title: "Rang Laurente"
+          icon: "mdi-skype",
+          title: "Rangie Laurente"
         },
         {
           icon: "mdi-gmail",
           title: "rangie.laurente@student.passerellesnumeriques.org"
-        },
-        {
-          icon: "mdi-github",
-          title: "rLaurentePn2k19"
         }
       ]
     };

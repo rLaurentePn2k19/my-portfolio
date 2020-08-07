@@ -33,7 +33,8 @@ export default {
           color: "#C62828",
           title: "Me",
           icon: "mdi-account",
-          src: require("@/assets/me1.jpg")
+          src: require("@/assets/me1.jpg"),
+          description: ""
         },
         {
           color: "#FB8C00",

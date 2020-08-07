@@ -5,7 +5,22 @@
         <v-col class="text-center" cols="12">
           <h1 class="display-2 font-weight-thin mb-4">{{name}}</h1>
           <h4 class="display-1 font-weight-thin mb-4">{{position}}</h4>
-          <v-btn class="ma-2" href="./resume/Rangie.Laurente.Resume.pdf" small outlined color="#EF5350">View resume</v-btn>
+          <v-btn
+            class="ma-2"
+            href="./resume/Rangie.Laurente.Resume.pdf"
+            small
+            outlined
+            color="#EF5350"
+          >View resume</v-btn>
+          <v-btn
+            class="ma-2"
+            href="https://github.com/rLaurentePn2k19"
+            small
+            outlined
+            color="#EF5350"
+          >
+            <v-icon>mdi-github</v-icon>Github
+          </v-btn>
         </v-col>
       </v-row>
     </v-parallax>

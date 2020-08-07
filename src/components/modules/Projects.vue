@@ -30,14 +30,23 @@
                     </div>
                   </v-card-text>
                   <v-card-actions>
-                    <v-btn fab small text>
-                      <v-icon>{{project.repo}}</v-icon>
+                    <v-btn
+                      :href="rep.link"
+                      fab
+                      small
+                      text
+                      v-for="rep in project.repo"
+                      :key="rep.icon"
+                    >
+                      <v-icon>{{rep.icon}}</v-icon>
                     </v-btn>
-                    <iconify-icon
-                      :data-icon="project.deploy"
-                      data-width="20"
+                    <!-- <iconify-icon
+                      v-for="rep in project.repo"
+                      :key="rep.icon"
+                      :data-icon="rep.icon"
+                      data-width="23"
                       style="cursor: pointer"
-                    ></iconify-icon>
+                    ></iconify-icon>-->
                   </v-card-actions>
                 </v-card>
               </div>
@@ -65,19 +74,16 @@ export default {
             "logos:nodejs-icon",
             "cib:mongodb"
           ],
-          repo: "mdi-github"
-        },
-        {
-          title: "Pharmacy",
-          description:
-            "A Web application which provides a list of cheap boarding houses where the user can ",
-          technology_used: ["logos:java"],
-          repo: "mdi-github"
+          repo: [
+            {
+              icon: "mdi-github",
+              link: "https://github.com/rLaurentePn2k19/abangbalay"
+            }
+          ]
         },
         {
           title: "SoftypeFoodOrder",
-          description:
-            "A Web application which provides a list of cheap boarding houses where the user can ",
+          description: "It is a web application for food ordering system.",
           technology_used: [
             "logos:vuetifyjs",
             "logos:vue",
@@ -85,13 +91,17 @@ export default {
             "logos:nodejs-icon",
             "cib:mongodb"
           ],
-          repo: "mdi-github",
-          deploy: "logos:netlify"
+          repo: [
+            {
+              icon: "mdi-github",
+              link: "https://github.com/rLaurentePn2k19/sfosfe"
+            }
+          ]
         },
         {
           title: "MQTT Web Socket",
           description:
-            "A Web application which provides a list of cheap boarding houses where the user can ",
+            "A web application where you can publish and subscribe a topic through MQTT.",
           technology_used: [
             "logos:html-5",
             "logos:css-3",
@@ -99,22 +109,24 @@ export default {
             "logos:bootstrap",
             "gg:bee"
           ],
-          repo: "mdi-github",
-          deploy: "logos:github-octocat"
+          repo: [
+            {
+              icon: "mdi-github",
+              link: "https://github.com/rLaurentePn2k19/rLaurentePn2k19.github.io"
+            }
+          ]
         },
         {
-          title: "Socket.io Chat app",
+          title: "Pharmacy",
           description:
-            "A Web application which provides a list of cheap boarding houses where the user can ",
-          technology_used: [
-            "logos:html-5",
-            "logos:css-3",
-            "cib:jquery",
-            "logos:bootstrap",
-            "cib:socket-io"
-          ],
-          repo: "mdi-github",
-          deploy: "logos:heroku-icon"
+            "This a console program in Java SDE, where the user can buy medicine through this application.",
+          technology_used: ["logos:java"],
+          repo: [
+            {
+              icon: "mdi-github",
+              link: "https://github.com/rLaurentePn2k19/OnlinePharmacy"
+            }
+          ]
         }
       ]
     };
