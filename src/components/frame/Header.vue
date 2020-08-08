@@ -4,19 +4,18 @@
       <!-- <v-app-bar app color="#1d1f20" color="white" dark elevate-on-scroll> -->
       <v-spacer></v-spacer>
       <div class="d-flex align-center">
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn target="_blank" text v-bind="attrs" v-on="on">
-              <span class="shrink mt-1 hidden-sm-and-down">Home</span>
-              <v-icon>mdi-home</v-icon>
-            </v-btn>
-          </template>
-          <span>Home</span>
-        </v-tooltip>
-        <v-btn target="_blank" text>
-          <span class="shrink mt-1 hidden-sm-and-down">Skills</span>
-          <v-icon>mdi-code-tags</v-icon>
-        </v-btn>
+        <a href="#home">
+          <v-btn target="_blank" text>
+            <span class="shrink mt-1 hidden-sm-and-down">Home</span>
+            <v-icon>mdi-home</v-icon>
+          </v-btn>
+        </a>
+        <a href="#skills" >
+          <v-btn target="_blank" text >
+            <span class="shrink mt-1 hidden-sm-and-down" >Skills</span>
+            <v-icon>mdi-code-tags</v-icon>
+          </v-btn>
+        </a>
         <v-avatar>
           <img
             class="shrink mr-1"
@@ -25,14 +24,18 @@
             :src="require('@/assets/code2.png')"
           >
         </v-avatar>
-        <v-btn target="_blank" text>
-          <span class="shrink mt-1 hidden-sm-and-down">About</span>
-          <v-icon>mdi-account</v-icon>
-        </v-btn>
-        <v-btn target="_blank" text>
-          <span class="shrink mt-1 hidden-sm-and-down">Contact</span>
-          <v-icon>mdi-phone</v-icon>
-        </v-btn>
+        <a href="#about">
+          <v-btn target="_blank" text>
+            <span class="shrink mt-1 hidden-sm-and-down">About</span>
+            <v-icon>mdi-account</v-icon>
+          </v-btn>
+        </a>
+        <a href="#contact">
+          <v-btn target="_blank" text>
+            <span class="shrink mt-1 hidden-sm-and-down">Contact</span>
+            <v-icon>mdi-phone</v-icon>
+          </v-btn>
+        </a>
       </div>
 
       <v-spacer></v-spacer>
@@ -54,6 +57,10 @@
   to {
     -webkit-transform: rotate(359deg);
   }
+}
+
+a {
+  text-decoration: none;
 }
 </style>
 

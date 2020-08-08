@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <v-parallax dark :src="require('@/assets/test2.jpg')" height="700">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
