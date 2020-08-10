@@ -3,7 +3,7 @@
     <v-main>
       <Header></Header>
       <Home></Home>
-      <Footer></Footer>
+      <!-- <Footer></Footer> -->
     </v-main>
   </v-app>
 </template>
@@ -11,7 +11,7 @@
 <script>
 import Header from "@/components/frame/Header.vue";
 import Home from "@/components/modules/Landing/Home.vue";
-import Footer from "@/components/frame/Footer.vue";
+// import Footer from "@/components/frame/Footer.vue";
 
 export default {
   data() {
@@ -20,7 +20,7 @@ export default {
   components: {
     Header,
     Home,
-    Footer
+    // Footer
   }
 };
 </script>

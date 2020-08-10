@@ -30,10 +30,10 @@
             <v-icon>mdi-account</v-icon>
           </v-btn>
         </a>
-        <a href="#contact">
+        <a href="#projects">
           <v-btn target="_blank" text>
-            <span class="shrink mt-1 hidden-sm-and-down">Contact</span>
-            <v-icon>mdi-phone</v-icon>
+            <span class="shrink mt-1 hidden-sm-and-down">Projects</span>
+            <v-icon>mdi-view-list</v-icon>
           </v-btn>
         </a>
       </div>
