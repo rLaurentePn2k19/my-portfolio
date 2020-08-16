@@ -12,8 +12,8 @@
             outlined
             color="#EF5350"
           >View resume</v-btn>
-          <a href="#contact">
-            <v-btn class="ma-2" target="_blank" small outlined color="#EF5350">View Contact</v-btn>
+          <a>
+            <v-btn class="ma-2" target="_blank" small outlined color="#EF5350" href="https://github.com/rLaurentePn2k19"><v-icon>mdi-github</v-icon>View Github</v-btn>
           </a>
         </v-col>
       </v-row>
