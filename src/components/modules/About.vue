@@ -70,7 +70,7 @@ export default {
           icon: "mdi-school",
           src: require("@/assets/softype.png"),
           description:
-            "I am an Intern Technical Consultant, I do solving technical problems whenever client facing techical issues."
+            "I am an Intern Technical Consultant, I do solving technical problems whenever client facing techical issues. (August 2020 - Present)"
         }
       ]
     };
