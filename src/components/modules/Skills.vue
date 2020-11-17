@@ -84,6 +84,21 @@ export default {
           icon: "mdi:nodejs",
           title: "ExpressJs",
           color: "#3C873A"
+        },
+        {
+          icon: "mdi:react",
+          title: "ReactJs",
+          color: "#61dafb"
+        },
+        {
+          icon: "mdi:laravel",
+          title: "PHP Laravel",
+          color: "#fb503b"
+        },
+        {
+          icon: "vscode-icons:file-type-mysql",
+          title: "MySQL",
+          color: "#00758F"
         }
       ]
     };

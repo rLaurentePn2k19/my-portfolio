@@ -17,7 +17,7 @@
           <v-card :color="item.color" dark>
             <v-card-title class="title">{{item.title }}</v-card-title>
             <v-card-text class="white text--primary">
-              <br> 
+              <br>
               <p>{{item.description}}</p>
             </v-card-text>
           </v-card>
@@ -37,23 +37,42 @@ export default {
           title: "Me",
           icon: "mdi-account",
           src: require("@/assets/me1.jpg"),
-          description: "I am passionate about programming and I am always striving hard to learn new technology to create innovative projects. Full-stack Developer is what really I dream to become."
+          description:
+            "I am passionate about programming and I am always striving hard to learn new technology to create innovative projects. Full-stack Developer is what really I dream to become."
         },
         {
-          color: "#FB8C00",
+          color: "#4B8BBE",
           title: "Organization",
           icon: " mdi-account-multiple",
           src: require("@/assets/pn-logo.png"),
-          description: 'I am a scholar of Passerelles numeriques Philippines is a French Non-Government Organization. As scholars, we are trained to become young professionals in the field of Computer Technology.'
+          description:
+            "I am a scholar of Passerelles numeriques Philippines is a French Non-Government Organization. As scholars, we are trained to become young professionals in the field of Computer Technology."
         },
         {
           color: "#43A047",
           title: "Education",
           icon: "mdi-school",
           src: require("@/assets/usc.jpg"),
-          description: 'I am currently studying at the University of San Carlos-Talamban Campus for 2.5 years with the course of Certificate in Computer Technology (CCT), specialized in Software Development.'
+          description:
+            "I am currently studying at the University of San Carlos-Talamban Campus for 2.5 years with the course of Certificate in Computer Technology (CCT), specialized in Software Development."
+        },
+        {
+          color: "#212529",
+          title: "Increment Technologies",
+          icon: "mdi-school",
+          src: require("@/assets/increment.png"),
+          description:
+            `I was a volunteered Web Developer for 2 months and it helped me to enhanced my skills and knowledge about web development.` 
+        },
+        {
+          color: "#E4691C",
+          title: "Softype Philippines Inc.",
+          icon: "mdi-school",
+          src: require("@/assets/softype.png"),
+          description:
+            "I am an Intern Technical Consultant, I do solving technical problems whenever client facing techical issues."
         }
-      ],
+      ]
     };
   }
 };

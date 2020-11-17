@@ -40,13 +40,7 @@
                     >
                       <v-icon>{{rep.icon}}</v-icon>
                     </v-btn>
-                    <!-- <iconify-icon
-                      v-for="rep in project.repo"
-                      :key="rep.icon"
-                      :data-icon="rep.icon"
-                      data-width="23"
-                      style="cursor: pointer"
-                    ></iconify-icon>-->
+                    Github
                   </v-card-actions>
                 </v-card>
               </div>
@@ -112,15 +106,20 @@ export default {
           repo: [
             {
               icon: "mdi-github",
-              link: "https://github.com/rLaurentePn2k19/rLaurentePn2k19.github.io"
+              link:
+                "https://github.com/rLaurentePn2k19/rLaurentePn2k19.github.io"
             }
           ]
         },
         {
-          title: "Pharmacy",
+          title: "Softype Employee Portal",
           description:
-            "This a console program in Java SDE, where the user can buy medicine through this application.",
-          technology_used: ["logos:java"],
+            "It is a Web Application for HRMS, it caters leave requests, office requests, company repository, organizational chart and employee directory which can make the access of all the employee centralized.",
+          technology_used: [
+            "mdi:react",
+            "mdi:laravel",
+            "vscode-icons:file-type-mysql"
+          ],
           repo: [
             {
               icon: "mdi-github",
