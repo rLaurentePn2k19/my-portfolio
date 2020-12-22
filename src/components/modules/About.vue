@@ -46,7 +46,7 @@ export default {
           icon: " mdi-account-multiple",
           src: require("@/assets/pn-logo.png"),
           description:
-            "I am a scholar of Passerelles numeriques Philippines is a French Non-Government Organization. As scholars, we are trained to become young professionals in the field of Computer Technology."
+            "I am a scholar of Passerelles numeriques Philippines, a French Non-Government Organization. As scholars, we are trained to become young professionals in the field of Technology, specially in Software Development."
         },
         {
           color: "#43A047",
