@@ -100,6 +100,11 @@ export default {
           title: "MySQL",
           color: "#00758F"
         }
+        ,{
+          icon: "cib:oracle-netsuite",
+          title: "Oracle NetSuite",
+          color: "#000000"
+        }
       ]
     };
   }
