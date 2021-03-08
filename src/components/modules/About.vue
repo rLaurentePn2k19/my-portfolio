@@ -1,41 +1,61 @@
 <template>
-  <div id="about">
-    <div style="padding: 2%">
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-thin mb-4">{{ "About Me" }}</h1>
-        </v-col>
-      </v-row>
-      <br />
-      <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
-        <v-timeline-item
-          v-for="(item, i) in items"
-          :key="i"
-          :color="item.color"
-          fill-dot
-        >
-          <template v-slot:icon>
-            <v-avatar size="60">
-              <img :src="item.src" />
-            </v-avatar>
-          </template>
-          <v-card :color="item.color" dark>
-            <v-card-title class="title">{{ item.title }}</v-card-title>
-            <v-card-text class="white text--primary">
-              <br />
-              <p>{{ item.description }}</p>
-            </v-card-text>
-          </v-card>
-        </v-timeline-item>
-      </v-timeline>
+  <v-lazy
+    v-model="isActive"
+    :options="{
+      threshold: 0.5,
+    }"
+    min-height="200"
+    transition="fade-transition"
+  >
+    <div id="about">
+      <div style="padding: 2%">
+        <v-row align="center" justify="center">
+          <v-col class="text-center" cols="12">
+            <h1 class="display-2 font-weight-thin mb-4">{{ "About Me" }}</h1>
+          </v-col>
+        </v-row>
+        <br />
+        <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+          <v-timeline-item
+            v-for="(item, i) in items"
+            :key="i"
+            :color="item.color"
+            fill-dot
+          >
+            <template v-slot:icon>
+              <v-avatar size="60">
+                <img :src="item.src" />
+              </v-avatar>
+            </template>
+            <v-lazy
+              v-model="isActiveItem"
+              :options="{
+                threshold: 1,
+              }"
+              min-height="200"
+              transition="fade-transition"
+            >
+              <v-card :color="item.color" dark>
+                <v-card-title class="title">{{ item.title }}</v-card-title>
+                <v-card-text class="white text--primary">
+                  <br />
+                  <p>{{ item.description }}</p>
+                </v-card-text>
+              </v-card>
+            </v-lazy>
+          </v-timeline-item>
+        </v-timeline>
+      </div>
     </div>
-  </div>
+  </v-lazy>
 </template>
 
 <script>
 export default {
   data() {
     return {
+      isActive: false,
+      isActiveItem: false,
       items: [
         {
           color: "#EF5350",
