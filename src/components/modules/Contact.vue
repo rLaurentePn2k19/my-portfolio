@@ -50,7 +50,7 @@ export default {
         },
         {
           icon: "mdi-skype",
-          title: "Rangie Laurente",
+          title: "live:.cid.f71411395c2ea3a6",
         },
         {
           icon: "mdi-gmail",

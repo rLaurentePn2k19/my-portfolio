@@ -79,7 +79,7 @@ export default {
           icon: "mdi-school",
           src: require("@/assets/usc.jpg"),
           description:
-            "I am studied at the University of San Carlos-Talamban Campus for 2.5 years with the course of Certificate in Computer Technology (CCT), specialized in Software Development.",
+            "I studied at the University of San Carlos-Talamban Campus for 2.5 years with the course of Certificate in Computer Technology (CCT), specialized in Software Development.",
         },
         {
           color: "#212529",
