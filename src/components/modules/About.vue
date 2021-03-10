@@ -5,7 +5,7 @@
       threshold: 0.5,
     }"
     min-height="200"
-    transition="fade-transition"
+    transition="scale-transition"
   >
     <div id="about">
       <div style="padding: 2%">
@@ -27,22 +27,20 @@
                 <img :src="item.src" />
               </v-avatar>
             </template>
-            <v-lazy
-              v-model="isActiveItem"
-              :options="{
-                threshold: 1,
-              }"
-              min-height="200"
-              transition="fade-transition"
-            >
-              <v-card :color="item.color" dark>
+            <v-hover open-delay="150" v-slot="{ hover }">
+              <v-card
+                :color="item.color"
+                dark
+                :elevation="hover ? 16 : 2"
+                :class="{ 'on-hover': hover }"
+              >
                 <v-card-title class="title">{{ item.title }}</v-card-title>
                 <v-card-text class="white text--primary">
                   <br />
                   <p>{{ item.description }}</p>
                 </v-card-text>
               </v-card>
-            </v-lazy>
+            </v-hover>
           </v-timeline-item>
         </v-timeline>
       </div>
@@ -71,7 +69,7 @@ export default {
           icon: " mdi-account-multiple",
           src: require("@/assets/pn-logo.png"),
           description:
-            "I am a scholar of Passerelles numeriques Philippines, a French Non-Government Organization. As scholars, we are trained to become young professionals in the field of Technology, specially in Software Development.",
+            "I am a scholar of Passerelles numeriques Philippines, a French Non-Government Organization. As scholars, we are trained to become young professionals in the field of Technology, specially in Software Development. ",
         },
         {
           color: "#43A047",
@@ -99,9 +97,13 @@ export default {
         },
       ],
     };
-  },
+  }
 };
 </script>
 
-<style>
+<style lang="sass" scoped>
+.v-card.on-hover.theme--dark
+  background-color: rgba(#FFF, 0.8)
+  >.v-card__text
+    color: #000
 </style>

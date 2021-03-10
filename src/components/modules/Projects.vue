@@ -5,7 +5,7 @@
       threshold: 0.5,
     }"
     min-height="200"
-    transition="fade-transition"
+    transition="scale-transition"
   >
     <div id="projects">
       <v-row align="center" justify="center">
