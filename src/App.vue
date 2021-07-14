@@ -1,33 +1,29 @@
 <template>
-  <v-app id="app">
-    <v-main>
-      <Header></Header>
-      <Home></Home>
-      <!-- <Footer></Footer> -->
-    </v-main>
-  </v-app>
+    <v-app id="app">
+        <Header></Header>
+        <v-main>
+            <Main></Main>
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-import Header from "@/components/frame/Header.vue";
-import Home from "@/components/modules/Landing/Home.vue";
-// import Footer from "@/components/frame/Footer.vue";
+import Header from '@/components/frame/Header.vue'
+import Main from '@/components/modules/Landing/Main.vue'
 
 export default {
-  data() {
-    return {};
-  },
-  components: {
-    Header,
-    Home,
-    // Footer
-  }
-};
+    data() {
+        return {}
+    },
+    components: {
+        Header,
+        Main
+    }
+}
 </script>
 
 <style>
 #app {
-  /* height: 200vh; */
-  background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 </style>
