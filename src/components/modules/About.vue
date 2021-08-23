@@ -30,21 +30,17 @@
                             </v-avatar>
                         </template>
                         <v-hover v-slot="{ hover }">
-                            <v-card
-                                :color="hover ? item.color : item.color"
-                                dark
-                                :elevation="hover ? 16 : 2"
-                                :class="{ 'on-hover': hover }"
-                                min-height="150"
+                            <v-alert
+                                :value="true"
+                                :color="hover ? item.color :''"
+                                class="font-weight-light pa-8"
+                                outlined
                             >
-                                <v-card-title class="title font-weight-light">{{
-                                    item.title
-                                }}</v-card-title>
-                                <v-divider></v-divider>
-                                <v-card-text>
-                                    {{ item.description }}
-                                </v-card-text>
-                            </v-card>
+                                <div class="title pb-2">
+                                    {{ item.title }}
+                                </div>
+                               {{ item.description }}
+                            </v-alert>
                         </v-hover>
                     </v-timeline-item>
                 </v-timeline>
